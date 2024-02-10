@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Schedule a Tutor";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h2>Skiing Tutor Calculator</h2>
+
+<label for="hours">Number of Hours:</label>
+<input type="number" id="hours" />
+
+<label>Charge per Hour:</label>
+<input type="text" id="chargePerHour" value="$50" readonly />
+
+<button id="calculateTotal">Calculate Total</button>
+
+<div>Total Cost: <span id="totalCost"></span></div>
+
+<a href="@Url.Action("SkiingInfo", "Home")">Back to Skiing Info</a>

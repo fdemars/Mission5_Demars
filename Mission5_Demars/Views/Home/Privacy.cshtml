@@ -15,4 +15,9 @@
 
 <div>Total Cost: <span id="totalCost"></span></div>
 
-<a href="@Url.Action("SkiingInfo", "Home")">Back to Skiing Info</a>
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/calculator.js"></script>
+}
+
+<a href="@Url.Action("Index", "Home")">Back to Skiing Info</a>

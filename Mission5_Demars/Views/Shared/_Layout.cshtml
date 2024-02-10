@@ -4,16 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Mission5_Demars</title>
+    <link rel="icon" type="image/x-icon" href="~/img/snowflake_icon.jpeg" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Mission5_Demars.styles.css" asp-append-version="true" />
 </head>
 <body>
-
-    <h2>Welcome to our Skiing Website</h2>
-
-    <img src="~/img/Niseko.jpeg" height="400" alt="Skiing Image 1" />
-    <img src="~/img/powder_slash.jpeg" height="400" alt="Skiing Image 2" />
 
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -29,7 +25,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Schedule a Tutor</a>
                         </li>
                     </ul>
                 </div>
@@ -37,6 +33,11 @@
         </nav>
     </header>
     <div class="container">
+
+        <h2>Ski Niseko, Japan</h2>
+
+        <img src="~/img/powder_slash.jpeg" height="400" alt="Skiing Image 2" />
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -47,14 +48,14 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/calculator.js"></script>
-
     @await RenderSectionAsync("Scripts", required: false)
+
+    <img src="~/img/Niseko.jpeg" height="400" alt="Skiing Image 1" style="display: block; margin: 0 auto;" />
+
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - Demars Inc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - Demars Inc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Schedule a Tutor</a>
         </div>
     </footer>
 
